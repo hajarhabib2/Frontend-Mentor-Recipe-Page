@@ -1,0 +1,140 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --head-font: "Young Serif", serif;
+  --p-font: "Outfit", sans-serif;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-left: 10px;
+}
+.card {
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  font-family: var(--p-font);
+  color: var(--Stone-600);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--Stone-100);
+  }
+  .card {
+    padding: 2rem;
+    width: 750px;
+    margin: 30px;
+    background-color: var(--White);
+    border-radius: 15px;
+  }
+  .card img {
+    border-radius: 15px;
+  }
+  .card-body {
+    padding-left: 0;
+  }
+}
+.card-body {
+  /* padding-left: 25px; */
+  margin: 16px;
+}
+
+.recipe-head h1 {
+  font-size: 2.5rem;
+  font-family: var(--head-font);
+  font-weight: 400;
+  color: var(--Stone-900);
+}
+.recipe-head p {
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone-600);
+  font-weight: 400;
+}
+.prep {
+  background-color: var(--Rose-50);
+}
+.prep h5 {
+  font-weight: 600;
+}
+.prep li {
+  color: var(--Stone-600);
+  padding-left: 10px;
+  padding-right: 110px;
+  /* margin-right: 50px; */
+}
+.prep li::marker {
+  color: var(--Rose-800);
+  font-weight: 600;
+}
+.prep h5 {
+  color: var(--Rose-800);
+}
+.prep span {
+  font-weight: 600;
+}
+.ingred {
+  border-bottom: 0.5px solid var(--Stone-150);
+}
+.ingred h2 {
+  font-family: var(--head-font);
+  color: var(--Brown-800);
+}
+.ingred li {
+  /* font-weight: 600; */
+  color: var(--Stone-600);
+  padding-bottom: 4px;
+}
+.ingred li::marker {
+  color: var(--Brown-800);
+}
+.instructions {
+  border-bottom: 0.5px solid var(--Stone-150);
+}
+.instructions h2 {
+  font-family: var(--head-font);
+  color: var(--Brown-800);
+}
+.instructions li {
+  padding-right: 15px;
+  /* font-size: 1.2rem; */
+}
+.instructions li::marker {
+  color: var(--Brown-800);
+}
+.instructions span {
+  font-weight: 700;
+}
+
+.nutrition {
+  padding: 1rem;
+}
+.nutrition h2 {
+  font-family: var(--head-font);
+  color: var(--Brown-800);
+  margin-bottom: 0.5rem;
+}
+tbody td:first-child {
+  color: var(--Stone-600);
+}
+tbody td:nth-child(2) {
+  color: var(--Brown-800);
+  font-weight: 600;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
